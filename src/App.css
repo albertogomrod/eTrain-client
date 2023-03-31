@@ -1,37 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap");
 
 @media (width <= 580px) {
   .App {
     text-align: center;
-    font-family: 'Chakra Petch', sans-serif;
+    font-family: "Chakra Petch", sans-serif;
+    height: 100vh;
     
-   height: 100%;
-    
+  }
+  
+  .img-centro-vertical{
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
   }
 
   #seccion1-home {
-    height: 200px;
+    height: 20vh;
     display: flex;
+    align-items: center;
     justify-content: center;
-    padding-top: 70px;
     background-color: rgb(104, 104, 104);
     color: white;
   }
+
   .button-s1 {
     background-color: rgb(158, 255, 145);
-    font-family: 'Chakra Petch', sans-serif;
+    font-family: "Chakra Petch", sans-serif;
   }
 
-  #num-etrains{
+  #num-etrains {
     font-size: 100px;
     color: rgb(158, 255, 145);
-    margin: 0px
+    margin: 0px;
   }
 
-  #seccion3-home{
-    display: flex;
-    flex-direction: row;
+  #seccion3-home {
     background-color: rgb(104, 104, 104);
     color: white;
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+  }
+  #seccion4-home {
+    height: 300px;
   }
 }
