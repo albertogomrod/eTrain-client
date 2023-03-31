@@ -1,5 +1,7 @@
-import React from "react";
+
+
 import sentadillabyn from "../assets/sentadillabyn.jpg";
+import CountUp from 'react-countup';
 
 function Home() {
   return (
@@ -13,7 +15,7 @@ function Home() {
       </section>
       <section>
         <div>
-          <h4 id="num-etrains">51</h4>
+          <h4 id="num-etrains"><CountUp end={51} duration={4} /></h4>
           <p>e-Trainers</p>
         </div>
         <div>
@@ -35,7 +37,11 @@ function Home() {
         </p>
       </section>
       <div>
-        <img  className= "img-centro-vertical" src={sentadillabyn} alt="sentadilla-byn" />
+        <img
+          className="img-centro-vertical"
+          src={sentadillabyn}
+          alt="sentadilla-byn"
+        />
       </div>
       <section id="seccion4-home">
         <h4>Acerca de e-Train</h4>
