@@ -9,7 +9,7 @@ function Navbar() {
     <NavLink to="/que-es-etrain">¿Qué es eTrain?</NavLink>
     <NavLink to="/servicios">Servicios</NavLink>
     <NavLink to="/blog">Blog</NavLink>
-    <NavLink to="/contactos">Contactos</NavLink>
+    <NavLink to="/contacto">Contacto</NavLink>
 
     </div>
   )

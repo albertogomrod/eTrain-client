@@ -6,6 +6,11 @@ import Home from "./pages/Home";
 import Error from "./pages/Error";
 import NotFound from "./pages/NotFound";
 
+import Blog from "./pages/Info/Blog";
+import Contacto from "./pages/Info/Contacto";
+import EtrainPage from "./pages/Info/EtrainPage";
+import Servicios from "./pages/Info/Servicios";
+
 //COMPONENTS
 import Navbar from "./components/Navbar";
 
@@ -15,6 +20,10 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/que-es-etrain" element={<EtrainPage />} />
+        <Route path="/servicios" element={<Servicios />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/contacto" element={<Contacto />} />
         {/* Rutas Error */}
         <Route path="/error" element={<Error />} />
         <Route path="*" element={<NotFound />} />
