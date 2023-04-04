@@ -1,14 +1,72 @@
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap");
 
+.section {
+  left: 0;
+  bottom: 12px;
+  width: 100%;
+  background: rgb(158, 255, 145);
+  padding-top: 60px;
+}
+
+footer {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 0 30px;
+}
+footer.top {
+  border-bottom: 2px solid #3a4f6a;
+  padding-bottom: 20px;
+}
+footer.top .links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+footer.bottom{
+  padding: 20px 0;
+  justify-content: space-between;
+}
+
+footer .links>div {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+footer h2{
+  margin:0;
+  font-size: 16px;
+  font-weight: 400;
+  color:blue
+}
+
+footer.legal{
+  font-size: 12px;
+}
+
+footer .legal> a{
+  margin: 0 4px;
+}
+
+footer .legal >span{
+  margin-right: 10px;
+}
+
+footer.bottom .links {
+  display: flex;
+  gap:10px;
+}
+
 @media (width <= 580px) {
   .App {
     text-align: center;
     font-family: "Chakra Petch", sans-serif;
-    height: 100vh;
-    
+    height: 100%;
   }
-  
-  .img-centro-vertical{
+
+  .img-centro-vertical {
     display: table-cell;
     width: 100%;
     vertical-align: middle;
@@ -43,5 +101,24 @@
   }
   #seccion4-home {
     height: 300px;
+  }
+
+  footer {
+    text-align: center;
+    align-items: center;
+  }
+
+  footer.top .links {
+    grid-template-columns: 1fr;
+  }
+
+  footer.bottom {
+    align-items: center;
+  }
+
+  footer .legal > span {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 2px;
   }
 }
