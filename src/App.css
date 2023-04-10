@@ -125,4 +125,12 @@ footer.bottom .links {
     margin-right: 0;
     margin-bottom: 2px;
   }
+
+  #seccion-blog{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(104, 104, 104);
+    color: white;
+  }
 }
