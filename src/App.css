@@ -58,7 +58,7 @@
 }
 
 .nav-elements ul a.active::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -4px;
   left: 0;
@@ -79,7 +79,7 @@
     cursor: pointer;
   }
 
-  #hamburguer{
+  #hamburguer {
     width: 30px;
   }
 
@@ -109,7 +109,6 @@
   }
 }
 
-
 footer {
   display: flex;
   align-items: flex-start;
@@ -126,39 +125,39 @@ footer.top .links {
   gap: 30px;
 }
 
-footer.bottom{
+footer.bottom {
   padding: 20px 0;
   justify-content: space-between;
 }
 
-footer .links>div {
+footer .links > div {
   display: grid;
   gap: 10px;
   margin-bottom: 30px;
 }
 
-footer h2{
-  margin:0;
+footer h2 {
+  margin: 0;
   font-size: 16px;
   font-weight: 400;
-  color:blue
+  color: blue;
 }
 
-footer.legal{
+footer.legal {
   font-size: 12px;
 }
 
-footer .legal> a{
+footer .legal > a {
   margin: 0 4px;
 }
 
-footer .legal >span{
+footer .legal > span {
   margin-right: 10px;
 }
 
 footer.bottom .links {
   display: flex;
-  gap:10px;
+  gap: 10px;
 }
 
 @media (width <= 580px) {
@@ -228,11 +227,32 @@ footer.bottom .links {
     margin-bottom: 2px;
   }
 
-  #seccion-blog{
+  #seccion-blog {
     height: 20vh;
     display: flex;
     flex-direction: column;
     background-color: rgb(104, 104, 104);
     color: white;
+  }
+
+  .numero-pilar {
+    text-align: start;
+    font-size: 90px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: white;
+    -webkit-text-stroke: 0.0000000001em black;
+  }
+
+  #servicios {
+    text-align: start;
+    padding-left: 10px;
+    padding-right: 5px;
+  }
+
+  .h4-pilares {
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 }
