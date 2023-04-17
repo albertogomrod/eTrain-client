@@ -11,6 +11,8 @@ import Contacto from "./pages/Info/Contacto";
 import EtrainPage from "./pages/Info/EtrainPage";
 import Servicios from "./pages/Info/Servicios";
 
+import BlogCreate from "./pages/Blog/BlogCreate";
+
 //COMPONENTS
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -25,6 +27,10 @@ function App() {
         <Route path="/servicios" element={<Servicios />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contacto" element={<Contacto />} />
+
+        {/* Rutas Admin */}
+        <Route path="/blog/create" element={<BlogCreate />} />
+
         {/* Rutas Error */}
         <Route path="/error" element={<Error />} />
         <Route path="*" element={<NotFound />} />

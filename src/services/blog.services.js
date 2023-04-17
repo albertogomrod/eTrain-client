@@ -9,11 +9,11 @@ const detallesEntradaService = (blogId) => {
 };
 
 const crearEntradaService = (newBlog) => {
-  return service.post("/blog/create", newBlog);
+  return service.post("/blog", newBlog);
 };
 
 const editarEntradaService = (blogId, updatedBlog) => {
-  return service.patch(`/hackaton/edit/${blogId}`, updatedBlog);
+  return service.patch(`/blog/edit/${blogId}`, updatedBlog);
 };
 
 const borrarEntradaService = (blogId) => {
