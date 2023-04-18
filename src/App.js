@@ -29,7 +29,7 @@ function App() {
         <Route path="/contacto" element={<Contacto />} />
 
         {/* Rutas Admin */}
-        <Route path="/blog/create" element={<BlogCreate />} />
+        <Route path="/nuevo-blog" element={<BlogCreate />} />
 
         {/* Rutas Error */}
         <Route path="/error" element={<Error />} />

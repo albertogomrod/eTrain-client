@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { crearEntradaService } from "../../services/blog.services";
+import { uploadPhotoBlogService } from "../../services/upload.services";
 
 function BlogCreate() {
   const navigate = useNavigate();
@@ -10,22 +11,42 @@ function BlogCreate() {
   const [description, setDescription] = useState("");
   const [photo, setPhoto] = useState(null);
 
+  const [isUploading, setIsUploading] = useState(false)
+
   const handleTitleChange = (e) => setTitle(e.target.value);
   const handleSubtitleChange = (e) => setSubtitle(e.target.value);
   const handleDescriptionChange = (e) => setDescription(e.target.value);
-  const handlePhotoChange = (e) => setPhoto(e.target.value);
+
+  const handleFileUpload = async (e)=>{
+    if (!e.target.files[0]){
+      return
+    }
+    setIsUploading (true)
+
+    const uploadData = new FormData()
+    uploadData.append("photo", e.target.files[0])
+
+    try {
+      const response = await uploadPhotoBlogService(uploadData)
+      setPhoto(response.data.photo)
+
+      setIsUploading(false)
+    } catch (error) {
+      navigate("/error")
+    }
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-        const newBlog= [
+        const newBlog= {
             title,
             subtitle,
             photo,
             description
-        ];
-      await crearEntradaService(newBlog);
+        };
+      await crearEntradaService (newBlog);
     } catch (error) {
         console.log(error)
         navigate("/error")
@@ -64,8 +85,9 @@ function BlogCreate() {
         <input
           type="file"
           name="photo"
-          onChange={handlePhotoChange}
-          value={photo}
+          onChange={handleFileUpload}
+          disabled={isUploading}
+
         />
         <br />
         <button type="submit">Crear</button>
