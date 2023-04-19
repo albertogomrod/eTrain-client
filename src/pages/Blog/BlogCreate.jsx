@@ -43,8 +43,8 @@ function BlogCreate() {
         const newBlog= {
             title,
             subtitle,
+            description,
             photo,
-            description
         };
       await crearEntradaService (newBlog);
     } catch (error) {
