@@ -5,7 +5,7 @@ const listaEntradasBlogService = () => {
 };
 
 const detallesEntradaService = (blogId) => {
-  return service.get(`/blog/details/${blogId}`);
+  return service.get(`/blog/${blogId}`);
 };
 
 const crearEntradaService = (newBlog) => {

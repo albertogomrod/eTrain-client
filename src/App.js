@@ -12,6 +12,7 @@ import EtrainPage from "./pages/Info/EtrainPage";
 import Servicios from "./pages/Info/Servicios";
 
 import BlogCreate from "./pages/Blog/BlogCreate";
+import BlogDetails from "./pages/Blog/BlogDetails";
 
 //COMPONENTS
 import Navbar from "./components/Navbar";
@@ -26,6 +27,7 @@ function App() {
         <Route path="/que-es-etrain" element={<EtrainPage />} />
         <Route path="/servicios" element={<Servicios />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:blogId" element={<BlogDetails />}/>
         <Route path="/contacto" element={<Contacto />} />
 
         {/* Rutas Admin */}
