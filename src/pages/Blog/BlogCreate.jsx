@@ -47,6 +47,7 @@ function BlogCreate() {
             photo,
         };
       await crearEntradaService (newBlog);
+      navigate("/blog")
     } catch (error) {
         console.log(error)
         navigate("/error")
