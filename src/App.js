@@ -13,10 +13,12 @@ import Servicios from "./pages/Info/Servicios";
 
 import BlogCreate from "./pages/Blog/BlogCreate";
 import BlogDetails from "./pages/Blog/BlogDetails";
+import BlogEdit from "./pages/Blog/BlogEdit";
 
 //COMPONENTS
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+
 
 function App() {
   return (
@@ -32,6 +34,7 @@ function App() {
 
         {/* Rutas Admin */}
         <Route path="/nuevo-blog" element={<BlogCreate />} />
+        <Route path="/editar-blog/:blogId" element={<BlogEdit />}/>
 
         {/* Rutas Error */}
         <Route path="/error" element={<Error />} />
