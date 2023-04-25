@@ -34,6 +34,7 @@ function BlogEdit() {
       setDescription(description);
       setPhoto(photo);
     } catch (error) {
+      console.log(error)
       navigate("/error");
     }
   };
@@ -41,15 +42,16 @@ function BlogEdit() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const updateBlog = {
+      const updatedBlog = {
         title: title,
         subtitle: subtitle,
         description: description,
         photo: photo,
       };
-      await editarEntradaService(params.blogId, updateBlog);
+      await editarEntradaService(params.blogId, updatedBlog);
       navigate(`/blog/${params.blogId}`);
     } catch (error) {
+      console.log(error)
       navigate("/error");
     }
   };
@@ -84,7 +86,7 @@ function BlogEdit() {
         <br />
         <label htmlFor="photo">Foto:</label>
         <input
-          type="file"
+          type="text"
           name="photo"
           onChange={handlePhotoChange}
           value={photo}
