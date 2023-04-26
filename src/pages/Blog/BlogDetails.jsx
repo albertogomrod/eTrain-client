@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
-import { detallesEntradaService } from "../../services/blog.services";
+import { useNavigate, useParams, Link } from "react-router-dom";
+import { borrarEntradaService, detallesEntradaService } from "../../services/blog.services";
 
 function BlogDetails() {
   const navigate = useNavigate();
@@ -23,6 +23,15 @@ function BlogDetails() {
     }
   };
 
+  const handleDeleteBlog = async (id) => {
+    try {
+      await borrarEntradaService (id);
+      navigate("/blog")
+    } catch (error) {
+      navigate("/error");
+    }
+  };
+
   if (isFetching === true) {
     return <h4>Cargando...</h4>;
   }
@@ -34,6 +43,17 @@ function BlogDetails() {
         <h2>{blogDetails.title}</h2>
         <h4>{blogDetails.subtitle}</h4>
         <p>{blogDetails.description}</p>
+        <button>
+        <Link to={`/editar-blog/${blogDetails._id}`}> Editar </Link>
+        </button>
+        <button
+                onClick={() => {
+                  handleDeleteBlog(blogDetails._id);
+                }}
+              >
+  
+                Borrar
+              </button>
       </div>
     </div>
   );

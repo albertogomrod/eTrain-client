@@ -17,7 +17,7 @@ const editarEntradaService = (blogId, updatedBlog) => {
 };
 
 const borrarEntradaService = (blogId) => {
-    return service.patch(`/blog/delete/${blogId}`);
+    return service.delete(`/blog/delete/${blogId}`);
   };
 
 export {
