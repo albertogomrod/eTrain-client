@@ -10,6 +10,8 @@ import Blog from "./pages/Info/Blog";
 import Contacto from "./pages/Info/Contacto";
 import EtrainPage from "./pages/Info/EtrainPage";
 import Servicios from "./pages/Info/Servicios";
+import Login from "./pages/Login.jsx"
+import Signup from "./pages/Signup"
 
 import BlogCreate from "./pages/Blog/BlogCreate";
 import BlogDetails from "./pages/Blog/BlogDetails";
@@ -31,6 +33,8 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:blogId" element={<BlogDetails />}/>
         <Route path="/contacto" element={<Contacto />} />
+        <Route path="/login" element={<Login />}/>
+        <Route path="/registro" element={<Signup />}/>
 
         {/* Rutas Admin */}
         <Route path="/nuevo-blog" element={<BlogCreate />} />
