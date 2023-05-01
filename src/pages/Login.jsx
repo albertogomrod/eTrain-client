@@ -2,7 +2,7 @@ import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { loginService } from "../services/auth.services"
 
-import { AuthContext } from "../context/auth.context.js";
+import { AuthContext } from "../context/auth.context";
 import { Link } from "react-router-dom";
 
 function Login() {
@@ -43,7 +43,6 @@ function Login() {
   return (
     <div className="loginCentradito">
       <br />
-      <button onClick={() => navigate(-1)}>Atrás</button>
       <h1 className="bold">Iniciar sesión</h1>
       <form onSubmit={handleLogin}>
         <label className="label">Nombre de usuario:</label>
