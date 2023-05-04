@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 
 import sentadillabyn from "../assets/sentadillabyn.jpg";
 import CountUp from "react-countup";
+import Marquee from "react-marquee-master";
 
 function Home() {
   const navigate = useNavigate();
@@ -51,7 +52,7 @@ function Home() {
           <p>e-Trainers</p>
         </div>
         <div>
-          <h4>El bueno de Antoñito haciendo cosas buenas para la gente </h4>
+          <marquee width="100%" scrollamount="15"><h2>El bueno de Antoñito haciendo cosas buenas para la gente </h2></marquee>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
             quo asperiores accusantium repudiandae porro natus modi, ab ut
