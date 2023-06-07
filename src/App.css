@@ -109,11 +109,15 @@
   }
 }
 
+#logoFooter{
+  width: 300px;
+}
+
 footer {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  gap: 40px;
+  gap: 10px;
   margin: 0 30px;
 }
 footer.top {
@@ -124,6 +128,13 @@ footer.top .links {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+  padding-left: 70px;
+}
+
+footer.top .links .titles {
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
 }
 
 footer.bottom {
