@@ -153,8 +153,39 @@ footer.top .links  p {
 }
 
 .rrssFooter a{
-  font-size: 20px;
+  font-size: 30px;
+  text-decoration: none;
+  color: black
 }
+
+.btnRRSS{
+
+font-weight: 0;
+font-size: 14px;
+color: #000000;
+background-color: #9eff91;
+padding: 10px 30px;
+border: solid #000000 2px;
+box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+border-radius: 50px;
+transition : 255ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+}
+
+.btnRRSS:hover{
+
+transition : 255ms;
+padding: 10px 40px;
+transform : translateY(-0px);
+background-color: #fff;
+color: #000000;
+border: solid 2px #000000;
+}
+
 
 footer.bottom {
   padding: 20px 0;

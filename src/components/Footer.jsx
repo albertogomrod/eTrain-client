@@ -20,17 +20,36 @@ function Footer() {
           </div>
           <br />
         </div>
-        
-          <div className="rrssFooter">
-            <a className="buttonRRSSFooter" href="https://www.instagram.com/etrain_pt/">IG</a>
-            
-            <a className="buttonRRSSFooter" href="https://twitter.com/home">Tw</a>
-            
-            <a className="buttonRRSSFooter" href="https://es.linkedin.com/">In</a>
-            
-            <a className="buttonRRSSFooter" href="https://www.youtube.com/?hl=es">YT</a>
-          </div>
-        
+
+        <div className="rrssFooter">
+          <button className="btnRRSS">
+            <a
+              className="buttonRRSSFooter"
+              href="https://www.instagram.com/etrain_pt/"
+            >
+              IG
+            </a>
+          </button>
+
+          <button className="btnRRSS">
+            <a href="https://twitter.com/home">
+              Tw
+            </a>
+          </button>
+
+          <button className="btnRRSS">
+            <a  href="https://es.linkedin.com/">
+              In
+            </a>
+          </button>
+          <button className="btnRRSS">
+            <a
+              href="https://www.youtube.com/?hl=es"
+            >
+              YT
+            </a>
+          </button>
+        </div>
       </footer>
       <footer className="bottom">
         <div className="legal">
