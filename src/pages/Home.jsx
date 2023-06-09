@@ -36,7 +36,7 @@ function Home() {
   }
 
   return (
-    <div>
+    <div className="home">
       <section id="seccion1-home">
         <div>
           <h4>¿Quieres formar parte de e-Train?</h4>

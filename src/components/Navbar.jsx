@@ -54,7 +54,6 @@ const Navbar = () => {
                   Cerrar sesión
                 </NavLink>
               </li>
-
             </ul>
           </div>
         </div>
@@ -87,6 +86,8 @@ const Navbar = () => {
               <li>
                 <NavLink to="/contacto">Contacto</NavLink>
               </li>
+            </ul>
+            <ul className="loginUl">
               <li>
                 <NavLink to="/login">Inicio sesión</NavLink>
               </li>
