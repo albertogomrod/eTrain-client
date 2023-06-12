@@ -50,7 +50,7 @@
 .nav-elements ul {
   display: flex;
   justify-content: center;
-  gap:30px;
+  gap: 30px;
   padding-left: 80%;
   list-style-type: none;
 }
@@ -88,6 +88,46 @@
   display: flex;
   justify-content: flex-end;
   padding-left: 50%;
+}
+
+.tituloBlog {
+  font-size: 20px;
+}
+
+#seccion1-home {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(104, 104, 104);
+  color: white;
+}
+
+.button-s1 {
+  background-color: rgb(158, 255, 145);
+  font-family: "Chakra Petch", sans-serif;
+}
+
+#secc-num-etrains {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#num-etrains {
+  font-size: 100px;
+  color: rgb(104, 104, 104);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+
+#etrainers {
+  font-size: 100px;
+  color: rgb(104, 104, 104);
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
 }
 
 @media (max-width: 768px) {

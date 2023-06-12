@@ -45,14 +45,13 @@ function Home() {
         </div>
       </section>
       <section>
-        <div>
+        <div id="secc-num-etrains">
           <h4 id="num-etrains">
             <CountUp end={51} duration={4} />
           </h4>
-          <p>e-Trainers</p>
+          <p id="etrainers">e-Trainers</p>
         </div>
         <div>
-          <marquee width="100%" scrollamount="15"><h2>El bueno de Antoñito haciendo cosas buenas para la gente </h2></marquee>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
             quo asperiores accusantium repudiandae porro natus modi, ab ut
@@ -77,6 +76,7 @@ function Home() {
         />
       </div>
       <section id="seccion4-home">
+      <marquee width="100%" scrollamount="15"><h2>El bueno de Antoñito haciendo cosas buenas para la gente </h2></marquee>
         <h4>Acerca de e-Train</h4>
         <p>
           El puto entrenamiento personal de Antoñito y ahora un lorem ipsum que
@@ -92,9 +92,9 @@ function Home() {
         {allBlogs.map((cadaBlog) => {
           return (
             <div>
-              <img src={cadaBlog.photo} alt="fotoportada-blog" width={"60%"} />{" "}
+              <img src={cadaBlog.photo} alt="fotoportada-blog" width={"10%"} />{" "}
               <Link to={`/blog/${cadaBlog._id}`}>
-                <h4>{cadaBlog.title}</h4>
+                <h4 className="tituloBlog">{cadaBlog.title}</h4>
               </Link>
             </div>
           );
