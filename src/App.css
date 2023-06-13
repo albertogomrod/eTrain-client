@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap");
 
 .web {
-  padding: 5px 0px 0px 10px;
+  padding: 5px 0px 0px 5px;
 }
 
 .section {
@@ -103,11 +103,6 @@
   color: white;
 }
 
-.button-s1 {
-  background-color: rgb(158, 255, 145);
-  font-family: "Chakra Petch", sans-serif;
-}
-
 #secc-num-etrains {
   display: flex;
   flex-direction: column;
@@ -128,6 +123,46 @@
   display: flex;
   justify-content: center;
   margin-top: 0px;
+}
+
+.btnHome {
+  font-weight: 0;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: rgb(104, 104, 104);
+  padding: 10px 30px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 50px;
+  transition: 255ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btnHome:hover {
+  transition: 255ms;
+  padding: 10px 40px;
+  transform: translateY(-0px);
+  background-color: #fff;
+  color: #000000;
+  border: solid 2px #000000;
+}
+
+#divBotonesHome{
+display: flex;
+justify-content: center;
+}
+
+#divSeccion1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#divSeccion1 h4{
+  font-size:30px;
 }
 
 @media (max-width: 768px) {

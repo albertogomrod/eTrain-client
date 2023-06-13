@@ -38,10 +38,12 @@ function Home() {
   return (
     <div className="home">
       <section id="seccion1-home">
-        <div>
+        <div id="divSeccion1">
           <h4>¿Quieres formar parte de e-Train?</h4>
-          <button className="button-s1">Conocer más</button>
-          <button className="button-s1">¡Apúntate!</button>
+          <div id="divBotonesHome">
+            <button className="btnHome">Conocer más</button>
+            <button className="btnHome">¡Apúntate!</button>
+          </div>
         </div>
       </section>
       <section>
@@ -76,7 +78,9 @@ function Home() {
         />
       </div>
       <section id="seccion4-home">
-      <marquee width="100%" scrollamount="15"><h2>El bueno de Antoñito haciendo cosas buenas para la gente </h2></marquee>
+        <marquee width="100%" scrollamount="15">
+          <h2>El bueno de Antoñito haciendo cosas buenas para la gente </h2>
+        </marquee>
         <h4>Acerca de e-Train</h4>
         <p>
           El puto entrenamiento personal de Antoñito y ahora un lorem ipsum que
