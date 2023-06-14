@@ -156,6 +156,12 @@
   text-align: center;
 }
 
+#video-centro-vertical {
+  display: table-cell;
+  width: 100%;
+  vertical-align: middle;
+}
+
 #num-etrains {
   font-size: 100px;
   color: rgb(158, 255, 145);
@@ -173,7 +179,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index:99
+  z-index: 99;
 }
 @media (max-width: 768px) {
   .nav-elements ul li:not(:last-child) {
