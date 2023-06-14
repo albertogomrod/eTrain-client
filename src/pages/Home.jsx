@@ -6,6 +6,7 @@ import { listaEntradasBlogService } from "../services/blog.services";
 import { Link } from "react-router-dom";
 
 import sentadillabyn from "../assets/sentadillabyn.jpg";
+import flexionesbyn from "../assets/pexels-ketut-subiyanto-4812848-3840x2160-25fps (1).mp4";
 import CountUp from "react-countup";
 import Marquee from "react-marquee-master";
 
@@ -41,25 +42,36 @@ function Home() {
         <div id="divSeccion1">
           <h4>¿Quieres formar parte de e-Train?</h4>
           <div id="divBotonesHome">
-            <button className="btnHome">Conocer más</button>
+            <button as={Link} to="/que-es-etrain" className="btnHome">
+              Conocer más
+            </button>
             <button className="btnHome">¡Apúntate!</button>
           </div>
         </div>
       </section>
       <section>
-        <div id="secc-num-etrains">
+        <div id="numHome">
           <h4 id="num-etrains">
             <CountUp end={51} duration={4} />
           </h4>
           <p id="etrainers">e-Trainers</p>
         </div>
-        <div>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
-            quo asperiores accusantium repudiandae porro natus modi, ab ut
-            facere ad at nam soluta itaque quibusdam tempora ipsa atque? Esse,
-            dicta. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          </p>
+        <div id="videoHome">
+          <video
+            loop
+            autoPlay
+            muted
+            id="video-centro-vertical"
+            src={flexionesbyn}
+            alt="sentadilla-byn"
+          >
+            <div id="numHome">
+              <h4 id="num-etrains">
+                <CountUp end={51} duration={4} />
+              </h4>
+              <p id="etrainers">e-Trainers</p>
+            </div>
+          </video>
         </div>
       </section>
       <section id="seccion3-home">
@@ -70,13 +82,7 @@ function Home() {
           Ama lo que haces.
         </p>
       </section>
-      <div>
-        <img
-          className="img-centro-vertical"
-          src={sentadillabyn}
-          alt="sentadilla-byn"
-        />
-      </div>
+
       <section id="seccion4-home">
         <marquee width="100%" scrollamount="15">
           <h2>El bueno de Antoñito haciendo cosas buenas para la gente </h2>
