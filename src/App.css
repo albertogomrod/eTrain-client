@@ -187,63 +187,73 @@
   z-index: 99;
 }
 
+#tituloSecc3{
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
 #seccion3-home {
-  -webkit-column-count: 2;
-  -moz-column-count: 2;
-  column-count: 2;
-  -webkit-column-gap: 37px;
-  -moz-column-gap: 37px;
-  column-gap: 37px;
-  -webkit-column-rule: 1px solid transparent;
-  -moz-column-rule: 1px solid transparent;
-  column-rule: 1px solid transparent;
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 60px;
+  grid-template-areas: 
+    ". ."; 
+    padding-left: 5%;
+    padding-left: 4%;
 }
 
-#h4Secc3 {
-  display: flex;
-  margin: 0px;
-  padding-left: 10%;
-  font-size: 60px;
+#seccion3-home h4{
+  font-size: 80px;
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
 
-#pSecc3 {
+#elenaSecc3 {
   display: flex;
-  justify-content: center;
-  padding-top: 6%;
   font-size: 30px;
 }
 
-.serviciosSecc3 {
-  padding-left: 10%;
-  padding-right: 10%;
-}
 
-#seccion4-home h4 {
-  display: flex;
-  padding-left: 5%;
+#acercaDe{
   font-size: 30px;
+  font-weight: bold;
+  padding-left: 4.5%;
+  margin-bottom: 0px;
 }
 
 #seccion4-beneficios {
-  -webkit-column-count: 3;
-  -moz-column-count: 3;
-  column-count: 3;
-  -webkit-column-gap: 50px;
-  -moz-column-gap: 50px;
-  column-gap: 50px;
-  -webkit-column-rule: 1px solid transparent;
-  -moz-column-rule: 1px solid transparent;
-  column-rule: 1px solid transparent;
-  padding-left: 60px;
-  padding-right: 30px;
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 100px; 
+  grid-template-areas: 
+    ". . ."; 
+  padding-left: 5%;
+  padding-right: 4%;
+  padding-bottom: 20px;
 }
 
 .numeroSecc4{
-font-size: 30vh;
+font-size: 80px;
+margin-bottom: 0px;
+margin-top: 50px;
+}
+
+.tituloSecc4{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#saberSecc4{
+  padding-left: 5%;
+  padding-right: 4%;
 }
 
 #seccionBlog {
   margin-top: 3%;
+  margin-left: 5%;
+  margin-right: 4%;
 }
 
 #seccionBlog h4 {
@@ -453,9 +463,6 @@ footer.bottom .links {
     display: flex;
     flex-direction: column;
     height: 20vh;
-  }
-  #seccion4-home {
-    height: 300px;
   }
 
   footer {
