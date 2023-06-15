@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap");
 
 .web {
-  padding: 5px 0px 0px 5px;
+  padding: 2px 0px 0px 2px;
 }
 
 .section {
@@ -162,8 +162,23 @@
   vertical-align: middle;
 }
 
+#numHome {
+  display: flex;
+  flex-direction: column;
+}
+
 #num-etrains {
-  font-size: 100px;
+  font-size: 130px;
+  color: rgb(158, 255, 145);
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+}
+
+#etrainers {
+  font-size: 130px;
   color: rgb(158, 255, 145);
   position: absolute;
   top: 50%;
@@ -172,15 +187,81 @@
   z-index: 99;
 }
 
-#etrainers {
-  font-size: 100px;
-  color: rgb(158, 255, 145);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 99;
+#seccion3-home {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 37px;
+  -moz-column-gap: 37px;
+  column-gap: 37px;
+  -webkit-column-rule: 1px solid transparent;
+  -moz-column-rule: 1px solid transparent;
+  column-rule: 1px solid transparent;
 }
+
+#h4Secc3 {
+  display: flex;
+  margin: 0px;
+  padding-left: 10%;
+  font-size: 60px;
+}
+
+#pSecc3 {
+  display: flex;
+  justify-content: center;
+  padding-top: 6%;
+  font-size: 30px;
+}
+
+.serviciosSecc3 {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#seccion4-home h4 {
+  display: flex;
+  padding-left: 5%;
+  font-size: 30px;
+}
+
+#seccion4-beneficios {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 50px;
+  -moz-column-gap: 50px;
+  column-gap: 50px;
+  -webkit-column-rule: 1px solid transparent;
+  -moz-column-rule: 1px solid transparent;
+  column-rule: 1px solid transparent;
+  padding-left: 60px;
+  padding-right: 30px;
+}
+
+.numeroSecc4{
+font-size: 30vh;
+}
+
+#seccionBlog {
+  margin-top: 3%;
+}
+
+#seccionBlog h4 {
+  font-size: 50px;
+  margin: 0px;
+}
+
+#cadaBlog {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+#cadaBlog img {
+  width: 15%;
+}
+
 @media (max-width: 768px) {
   .nav-elements ul li:not(:last-child) {
     margin-right: 30px;

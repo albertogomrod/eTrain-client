@@ -5,10 +5,8 @@ import { useNavigate } from "react-router-dom";
 import { listaEntradasBlogService } from "../services/blog.services";
 import { Link } from "react-router-dom";
 
-import sentadillabyn from "../assets/sentadillabyn.jpg";
 import flexionesbyn from "../assets/pexels-ketut-subiyanto-4812848-3840x2160-25fps (1).mp4";
 import CountUp from "react-countup";
-import Marquee from "react-marquee-master";
 
 function Home() {
   const navigate = useNavigate();
@@ -74,38 +72,78 @@ function Home() {
           </video>
         </div>
       </section>
-      <section id="seccion3-home">
-        <h4>¡Hazlo!</h4>
-        <p>
-          Haz un trabajo por el que sientas orgullo. Da lo mejor de ti.
-          Diviértete haciéndolo. Sé valiente y empezarás a notar los resultados.
-          Ama lo que haces.
-        </p>
-      </section>
-
-      <section id="seccion4-home">
-        <marquee width="100%" scrollamount="15">
-          <h2>El bueno de Antoñito haciendo cosas buenas para la gente </h2>
-        </marquee>
-        <h4>Acerca de e-Train</h4>
-        <p>
-          El puto entrenamiento personal de Antoñito y ahora un lorem ipsum que
-          te vas a cagar. Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Nesciunt, eligendi a? At recusandae magnam repudiandae iure
-          tempora ab quasi id dolore. Neque enim animi quam cum sit facere
-          laborum dolor!
-        </p>
-      </section>
       <section>
+        <div id="seccion3-home">
+          <div className="serviciosSecc3">
+            <p> ETRAIN</p>
+            <hr />
+          </div>
+          <h4 id="h4Secc3">¡Hazlo!</h4>
+          <p className="serviciosSecc3">
+            Haz un trabajo por el que sientas orgullo. Da lo mejor de ti.
+            Diviértete haciéndolo. Sé valiente y empezarás a notar los
+            resultados. Ama lo que haces.
+            <br />
+            <br />
+            Antoñito te hace un Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. ¡Y ni te enteras! Increible.
+          </p>
+          <div className="serviciosSecc3">
+            <hr />
+            <p> ➯ Servicios</p>
+            <hr />
+          </div>
+
+          <p id="pSecc3">
+            Y en esta parte
+            <br />
+            Llega la Elena
+            <br />
+            La de los clicks
+            <br />
+            Y te mete un diseño to guapo
+            <br />Y me arregla toda la web del Antoñio
+          </p>
+        </div>
+      </section>
+      <marquee width="100%" scrollamount="15">
+        <h2>El bueno de Antoñito haciendo cosas buenas para la gente </h2>
+      </marquee>
+      <section id="seccion4-home">
+        <h4>Acerca de e-Train</h4>
+        <div id="seccion4-beneficios">
+          <div>
+            <p className="numeroSecc4">01.</p>
+            <p>
+              El puto entrenamiento personal de Antoñito y ahora un lorem ipsum
+              que te vas a cagar. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Nesciunt, eligendi a? At recusandae magnam
+              repudiandae iure tempora ab quasi id dolore. Neque enim animi quam
+              cum sit facere laborum dolor! Lorem ipsum, dolor sit amet
+              consectetur adipisicing elit. Doloremque iusto consequuntur
+              voluptas explicabo alias laudantium dolor illum, nisi, eius
+              eveniet atque similique fugit ullam. Molestiae corrupti doloribus
+              quo unde vero. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Vitae qui eveniet numquam quos totam perspiciatis nulla ad
+              nobis aliquid est, sequi maiores tempore ab facere natus
+              praesentium magni veniam suscipit?
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="seccionBlog">
+        <p>Ultimas entradas</p>
+        <hr />
         <h4>eTrain Blog</h4>
+        <hr />
         {allBlogs.length === 0 ? <h4>No hay blogs disponibles</h4> : null}
         {allBlogs.map((cadaBlog) => {
           return (
-            <div>
+            <div id="cadaBlog">
               <img src={cadaBlog.photo} alt="fotoportada-blog" width={"10%"} />{" "}
-              <Link to={`/blog/${cadaBlog._id}`}>
-                <h4 className="tituloBlog">{cadaBlog.title}</h4>
-              </Link>
+              <hr />
+              <p className="tituloBlog">{cadaBlog.title}</p>
+              <Link to={`/blog/${cadaBlog._id}`}>➯ Ver más</Link>
             </div>
           );
         })}
