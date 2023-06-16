@@ -36,7 +36,7 @@ function Home() {
 
   return (
     <div className="home">
-      <section id="seccion1-home">
+      {/* <section id="seccion1-home">
         <div id="divSeccion1">
           <h4>¿Quieres formar parte de e-Train?</h4>
           <div id="divBotonesHome">
@@ -46,7 +46,7 @@ function Home() {
             <button className="btnHome">¡Apúntate!</button>
           </div>
         </div>
-      </section>
+      </section> */}
       <section>
         <div id="numHome">
           <h4 id="num-etrains">
@@ -72,7 +72,7 @@ function Home() {
           </video>
         </div>
       </section>
-      <section>
+      <section id="secc3">
         <div id="tituloSecc3">
           <p> ETRAIN</p>
           <hr />
@@ -187,16 +187,22 @@ function Home() {
         <h4>eTrain Blog</h4>
         <hr />
         {allBlogs.length === 0 ? <h4>No hay blogs disponibles</h4> : null}
-        {allBlogs.map((cadaBlog) => {
-          return (
-            <div id="cadaBlog">
-              <img src={cadaBlog.photo} alt="fotoportada-blog" width={"10%"} />{" "}
-              <hr />
-              <p className="tituloBlog">{cadaBlog.title}</p>
-              <Link to={`/blog/${cadaBlog._id}`}>➯ Ver más</Link>
-            </div>
-          );
-        })}
+        <div id="carrouselBlog">
+          {allBlogs.map((cadaBlog) => {
+            return (
+              <div id="cadaBlog">
+                <img
+                  src={cadaBlog.photo}
+                  alt="fotoportada-blog"
+                  width={"10%"}
+                />{" "}
+                <hr />
+                <p className="tituloBlog">{cadaBlog.title}</p>
+                <Link to={`/blog/${cadaBlog._id}`}>➯ Ver más</Link>
+              </div>
+            );
+          })}
+        </div>
       </section>
     </div>
   );
